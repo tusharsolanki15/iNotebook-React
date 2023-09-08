@@ -5,7 +5,7 @@ const NavBar = () => {
   let location = useLocation();
 
   useEffect(() => {
-    console.log(location.pathname)
+    // console.log(location.pathname)
   }, [location]);
 
   return (
