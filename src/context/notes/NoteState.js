@@ -1,9 +1,67 @@
+import { useState } from "react";
 import NoteContext from "./noteContext";
 
 const NoteState = (props) => {
+    const notesInitial = [
+        {
+          "_id": "64f0cdaac39f422cad622a30",
+          "user": "64f0b08f2e962093baf09f4b",
+          "title": "getup updated",
+          "description": "early in morning updated",
+          "tag": "updated",
+          "date": "2023-08-31T17:28:10.328Z",
+          "__v": 0
+        },
+        {
+          "_id": "64f2eb960513ee4b9f0105b4",
+          "user": "64f0b08f2e962093baf09f4b",
+          "title": "getup",
+          "description": "early in morning",
+          "tag": "General",
+          "date": "2023-09-02T08:00:22.307Z",
+          "__v": 0
+        },
+        {
+            "_id": "64f0cdaac39f422cad622a30",
+            "user": "64f0b08f2e962093baf09f4b",
+            "title": "getup updated",
+            "description": "early in morning updated",
+            "tag": "updated",
+            "date": "2023-08-31T17:28:10.328Z",
+            "__v": 0
+          },
+          {
+            "_id": "64f2eb960513ee4b9f0105b4",
+            "user": "64f0b08f2e962093baf09f4b",
+            "title": "getup",
+            "description": "early in morning",
+            "tag": "General",
+            "date": "2023-09-02T08:00:22.307Z",
+            "__v": 0
+          },
+          {
+            "_id": "64f0cdaac39f422cad622a30",
+            "user": "64f0b08f2e962093baf09f4b",
+            "title": "getup updated",
+            "description": "early in morning updated",
+            "tag": "updated",
+            "date": "2023-08-31T17:28:10.328Z",
+            "__v": 0
+          },
+          {
+            "_id": "64f2eb960513ee4b9f0105b4",
+            "user": "64f0b08f2e962093baf09f4b",
+            "title": "getup",
+            "description": "early in morning",
+            "tag": "General",
+            "date": "2023-09-02T08:00:22.307Z",
+            "__v": 0
+          }
+      ]
+      const [notes, setNotes] =  useState(notesInitial)
 
     return (
-        <NoteContext.Provider value={{}}>
+        <NoteContext.Provider value={{notes, setNotes}}>
             {props.children}
         </NoteContext.Provider>
     )
