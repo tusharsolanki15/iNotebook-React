@@ -25,6 +25,10 @@ export const User = () => {
           <label htmlFor="exampleInputPassword1">ID</label>
           <input type="id" className="form-control" id="id"  value={user.id} readOnly/>
         </div>
+        <div className="form-group my-2">
+          <label htmlFor="exampleInputPassword1">Date</label>
+          <input type="text" className="form-control" id="date"  value={user.date} readOnly/>
+        </div>
       </form>
     </div>
   )

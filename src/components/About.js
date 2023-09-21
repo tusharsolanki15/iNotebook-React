@@ -24,11 +24,10 @@ const About = () => {
 
         <div className="row featurette d-flex justify-content-center  align-items-center my-3">
           <div className="col-md-7 order-md-2">
-            <h2 className="featurette-heading">We started Icoder's in 1950 <span className="text-muted">It’ll blow your
+            <h2 className="featurette-heading">We started iNotebook in 2023 <span className="text-muted">It’ll blow your
               mind.</span>
             </h2>
-            <p className="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-              prose here.
+            <p className="lead">At iNotebook, our mission is simple: to make note-taking and organization effortless for everyone. We believe that well-organized notes can enhance productivity and creativity, and we want to empower you to achieve your goals through effective note management.
             </p>
           </div>
           <div className="col-md-5 order-md-1">
@@ -39,11 +38,9 @@ const About = () => {
 
         <div className="row featurette d-flex justify-content-center  align-items-center my-3">
           <div className="col-md-7">
-            <h2 className="featurette-heading">First featurette heading. <span className="text-muted">It’ll blow your
-              mind.</span>
+            <h2 className="featurette-heading">First featurette heading. <span className="text-muted">It’ll secure your Notes</span>
             </h2>
-            <p className="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-              prose here.
+            <p className="lead">Your privacy and data security are our top priorities. We use the latest encryption technology to ensure that your notes are safe and secure.
             </p>
           </div>
           <div className="col-md-5">

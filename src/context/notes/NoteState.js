@@ -5,7 +5,7 @@ const NoteState = (props) => {
   const host = "http://localhost:5000"
   const notesInitial = []
   const [notes, setNotes] = useState(notesInitial)
-  const [user, setUser] = useState({name: "", email: "", id: ""})
+  const [user, setUser] = useState({name: "", email: "", id: "", date: ""})
 
   const getUser = async () => {
     // API CALL
@@ -17,7 +17,7 @@ const NoteState = (props) => {
       }
     });
     const json = await response.json()
-    setUser({name: json.name, email: json.email, id: json._id})
+    setUser({name: json.name, email: json.email, id: json._id, date: json.date})
   }
 
   // Get all Notes
